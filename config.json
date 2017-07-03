@@ -1,0 +1,5 @@
+{
+  "prefix": ";",
+  "token": "",
+  "enabled_extensions": [ "songinfo", "lyrics", "eval", "embed" ]
+}
