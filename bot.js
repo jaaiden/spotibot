@@ -39,7 +39,6 @@ setInterval( (err, res) => {
 }, 10000)
 
 client.on('message', message => {
-
   // Have extensions parse the messages
   fs.readdirSync(extdir).forEach(file => {
     for (enabledext in config.enabled_extensions) {
