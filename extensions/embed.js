@@ -7,7 +7,7 @@ var config = require('../config.json')
 module.exports = {
   parse: function (spotifyClient, discordClient, messageObject) {
 
-    if (messageObject.content.substring(0, 6) == config.prefix + 'embed' && messageObject.author.id == discordClient.user.id) {
+    if (messageObject.content.startsWith(config.prefix + 'embed') && messageObject.author.id == discordClient.user.id) {
       console.log('Running embed >> ' + messageObject.content.substring(7))
       messageObject.delete()
       messageObject.channel.send({embed:{

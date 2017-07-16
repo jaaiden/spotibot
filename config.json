@@ -1,6 +1,5 @@
 {
-  "prefix": ";",
+  "prefix": "^",
   "token": "",
-  "chat_cooldown": 15000,
-  "enabled_extensions": [ "songinfo", "lyrics", "eval", "embed", "userinfo" ]
+  "chat_cooldown": 15000
 }

@@ -7,7 +7,7 @@ const dateformat = require('dateformat')
 
 module.exports = {
   parse: function (spotifyClient, discordClient, messageObject) {
-    if ((messageObject.content.substring(0, 9) === config.prefix + 'userinfo' || messageObject.content.substring(0, 6) === config.prefix + 'uinfo') && messageObject.author.id === discordClient.user.id) {
+    if ((messageObject.content.startsWith(config.prefix + 'userinfo') || messageObject.content.startsWith(config.prefix + 'uinfo')) && messageObject.author.id === discordClient.user.id) {
       var user = messageObject.mentions.users.first()
       messageObject.channel.send({embed: {
         color: 3447003,

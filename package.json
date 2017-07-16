@@ -1,6 +1,6 @@
 {
   "name": "spotibot",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A Discord selfbot that displays your currently playing track in Spotify among other features!",
   "main": "bot.js",
   "repository": {
@@ -13,7 +13,12 @@
     "url": "https://github.com/zackdevine/spotibot/issues"
   },
   "homepage": "https://github.com/zackdevine/spotibot#readme",
+  "auto-updater": {
+    "repo": "zackdevine/spotibot",
+    "branch": "master"
+  },
   "dependencies": {
+    "auto-updater": "^1.0.2",
     "dateformat": "^2.0.0",
     "discord.js": "^11.0.0",
     "lyric-get": "^1.0.3",
